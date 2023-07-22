@@ -1,0 +1,481 @@
+*
+{
+    font-family: 'Source Sans Pro';
+    --couleur1: #C0C0C0;
+    --couleur2: #FFDC60;
+    --couleur3: #D9D9D9;
+    --bouton_hover: #F28705;
+}
+
+body
+{
+    display: flex;
+    margin : 0;
+    background-color: #D9D9D9;
+    min-height: 100vh;
+}
+
+/* HEADER */
+
+header > a > img 
+{
+    width: 20vw;
+}
+
+header
+{
+    background-color: var(--couleur2);
+    color: black;
+    width: 20vw;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+a:visited, a
+{
+    color: black;
+    text-decoration: none;
+}
+
+header > nav > ul > li > a:hover, #retour_alizon:hover
+{
+    color: grey;
+    background-color: var(--couleur2);
+}
+
+header > nav > ul
+{
+    padding: 0.3em;
+    margin: 0;
+    list-style-type: none;
+}
+
+header > nav > ul > li
+{
+    padding: 0.5em 0 0.5em 0.1em;
+    margin: 0;
+    font-size: 2em;
+}
+
+header > div 
+{
+    font-size: large;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+header > div > a
+{
+    margin-top: 0.5em;
+}
+
+a, a:visited
+{
+    color : black;
+    text-decoration: none;
+}
+
+input[type='submit']:hover, main > article > form > div > a:hover
+{
+    text-decoration: none;
+    background-color: var(--bouton_hover);
+}
+
+/* MAIN */
+
+main
+{
+    display: flex;
+    flex-direction: column;
+    margin : 0;
+}
+
+main > h1 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    font-size: 3em;
+    font-weight: bolder;
+}
+
+main > article
+{
+    font-size: 1.5em;
+    background-color: white;
+    margin: 1em 2em 2em 2em;
+    padding: 2em 3em;
+    border-radius: 30px;
+    -webkit-box-shadow: 13px 12px 21px 2px rgba(0,0,0,0.2); box-shadow: 13px 12px 21px 2px rgba(0,0,0,0.2);
+}
+
+main > article > form > input
+{
+    margin-top: 0.7em;
+}
+
+main
+{
+    width: 80vw;
+}
+
+main > h1 
+{
+    height: 7.92710706vw;
+}
+
+/* Gerer TVA */
+
+main > article > form > .gerer_tva > thead > tr > th 
+{
+    width : 25%;
+}
+
+main > article > form > .gerer_tva > tbody > tr > td > input 
+{
+    width : 3em;
+    padding: 10px;
+    border-radius: 10px;
+    border: black solid 1px;
+}
+
+/* Formulaire */
+
+main > article > form > table 
+{
+    width : 100%;
+}
+
+main > article > form > label
+{
+    width: 100%;
+}
+
+main > article > form > input
+{
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+main > article > form > input[type="submit"]
+{
+    background-color: var(--couleur2);
+    border: black solid 2px;
+    border-radius: 5px;
+    margin-top: 1.5em;
+    padding: 0.2em 0.7em;
+    width: 100%;
+    color: black;
+    align-self: center;
+}
+
+.erreur
+{
+    color: red;
+    width : 100%;
+    text-align: center;
+    margin : 0;
+}
+
+.valide
+{
+    color: green;
+    width : 100%;
+    text-align: center;
+    margin : 0;
+}
+
+article > form > select
+{
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+/* Catalogue */
+
+.card
+{
+    padding: 0;
+    margin: 0.2em 0.3em;
+    width: 18rem;
+}
+
+.card-title
+{
+    font-size: 1em;
+}
+
+.card-text
+{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: 0.7em;
+    margin-bottom: 60px;
+}
+
+.card-img-top
+{
+    height: 200px;
+    object-fit: cover;
+}
+
+.card > .card-body > form > input[type=submit]
+{
+    position: absolute;
+    bottom: 20px;
+}
+
+.btn
+{
+    background-color: var(--couleur2);
+    color: black;
+    border: black solid 1px;
+}
+
+.btn:hover
+{
+    background-color: var(--bouton_hover);
+    color: black;
+    border: black solid 1px;
+}
+
+body > main > article > .row
+{
+    margin-top: 1em;
+}
+
+h2 
+{
+    margin: 0 0 1em 0;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+#catalogue
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.empty
+{
+    text-align: center;
+    padding: 20vh 0;
+}
+
+.empty > a, .empty > a:visited
+{
+    font-weight: bolder;
+    color: var(--couleur2);
+}
+
+.empty > a:hover
+{
+    font-weight: bolder;
+    color: rgb(173, 169, 169);
+
+}
+
+/* detail produit */
+
+#image_produit
+{
+    height: 18vw;
+    object-fit: cover;
+    margin-bottom: 1em;
+}
+
+main > article > .detail_prod > table > tbody > tr > td
+{
+    padding: 0.4em;
+}
+
+main > article > .detail_prod > table > tbody > tr
+{
+    border-bottom: var(--couleur2) solid 1px;
+    width: 100%;
+}
+
+main > article > .detail_prod > table > tbody > tr > td:first-child
+{
+    font-weight: bolder;
+    width: 25%;
+}
+
+main > article > .detail_prod > table > tbody > tr > td > input[type=text],
+main > article > .detail_prod > table > tbody > tr > td > input[type=number]
+{
+    width: 100%;
+    border: black solid 1px;
+    border-radius: 5px;
+    padding: 0.2em 1em;
+}
+
+main > article > .detail_prod > table > tbody > tr > td > select
+{
+    margin: 20px 0; 
+    background-color: white;
+    width: 100%;
+    border: black solid 1px;
+    border-radius: 5px;
+    padding: 0.2em 1em;
+}
+
+main > article > form > div > a, main > article > form > div > input[type="submit"]
+{
+    text-align: center;
+    background-color: var(--couleur2);
+    border: black solid 2px;
+    border-radius: 5px;
+    padding: 0.2em 0.7em;
+    color: black;
+    align-self: center;
+}
+
+main > h1 > .return_back, main > h1 > .return_back:visited
+{
+    color: black;
+    position: absolute;
+    left: 24vw;
+    top: 40px;
+}
+
+main > h1 > .return_back:hover
+{
+    color: rgb(173, 169, 169);
+}
+
+main > h1 > .delete_product, main > h1 > .delete_product:visited
+{
+    color: black;
+    position: absolute;
+    right: 60px;
+    top: 40px;
+}
+
+main > h1 > .delete_product:hover
+{
+    color: rgb(173, 169, 169);
+}
+
+form > .delete_product
+{
+    background-color: var(--couleur3);
+    border: none;
+    position: absolute;
+    right: 60px;
+    top: 40px;
+}
+
+form > .delete_product:hover
+{
+    color: rgb(173, 169, 169);
+}
+
+
+/* Modif images* */
+
+input[type="checkbox"]
+{
+    align-self: center;
+    vertical-align: middle;
+    height: 25px;
+}
+
+.bouton-principal, .bouton-principal:visited
+{
+    border: black solid 2px;
+    background-color: var(--couleur2);
+    width: 100%;
+    color: black;
+    border-radius: 5px;
+    padding: 5px 0;
+}
+
+.bouton-principal:hover
+{
+    background-color: var(--bouton_hover);
+}
+
+/* Solder produit */
+
+main > article > table
+{
+    width: 100%;
+}
+
+.bouton-solde
+{
+    width: 5em;
+    text-align: center;
+}
+
+.bouton_recap_solde, .bouton_recap_solde:visited
+{
+    border: none;
+    background-color: white;
+}
+
+.bouton_recap_solde:hover
+{
+    color: grey;
+}
+
+/***************************************************
+                    NOTIFICATIONS
+***************************************************/
+
+.notification_ok {
+    z-index:4;
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    background-color: rgb(47, 113, 47);
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    animation: slideOutToRight 5s forwards;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.notification_non {
+    z-index:4;
+    position: fixed;
+    top: 50px;
+    right: 20px;
+    background-color: rgb(220, 17, 17);
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    animation: slideOutToRight 5s forwards;
+    padding: 15px;
+    font-size: 20px;
+}
+
+  
+@keyframes slideOutToRight {
+    0% {
+        transform: translateX(200%); /* position initial */
+    }
+    10%
+    {
+        transform: translateX(0); /* position initial */
+    }
+    90%
+    {
+        transform: translateX(0); /* position initial */
+    }
+    100% {
+        transform: translateX(200%); /* déplacement vers la droite */
+    }
+}
