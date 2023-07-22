@@ -1,0 +1,8 @@
+#!/bin/bash
+chmod 777 builder.php
+php builder.php > /Docker/$1/catalogue.html
+cp builder.css /Docker/$1/builder.css
+
+docker image pull sae4-html2pdf
+docker run --rm -ti -v /Docker/$1:/work sae4-html2pdf "html2pdf catalogue.html catalogue.pdf"
+cp /Docker/$1/catalogue.pdf ../catalogue.pdf

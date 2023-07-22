@@ -1,0 +1,82 @@
+[
+    {
+        "nom" : "nom vendeur",
+        "logo" : "http://localhost:8080/images/oeil.png",
+        "raison_sociale" : "raison sociale",
+        "siret" : "numéro de siret",
+        "numero_TVA" : "numéro de TVA",
+        "adresse" : "adresse",
+        "contact" : "adresse mail",
+        "description" : "description",
+        "note" : "note",
+
+        "produits" : [
+
+            {
+                "nom_produit" : "nom produit",
+                "prixHT" : "prix HT",
+                "prixTTC" : "prix TTC",
+                "image" : "http://localhost:8080/images/1_1.jpg",
+                "description" : "description"
+            },
+            {
+                "nom_produit" : "nom produit",
+                "prixHT" : "prix HT",
+                "prixTTC" : "prix TTC",
+                "image" : "http://localhost:8080/images/1_1.jpg",
+                "description" : "description"
+            },
+            {
+                "nom_produit" : "nom produit",
+                "prixHT" : "prix HT",
+                "prixTTC" : "prix TTC",
+                "image" : "http://localhost:8080/images/1_1.jpg",
+                "description" : "description"
+            }
+        ]
+    },
+    {
+        "nom" : "nom vendeur",
+        "logo" : "http://localhost:8080/images/oeil.png",
+        "raison_sociale" : "raison sociale",
+        "siret" : "numéro de siret",
+        "numero_TVA" : "numéro de TVA",
+        "adresse" : "adresse",
+        "contact" : "adresse mail",
+        "description" : "description",
+        "note" : "note",
+
+        "produits" : [
+
+            {
+                "nom_produit" : "nom produit",
+                "prixHT" : "prix HT",
+                "prixTTC" : "prix TTC",
+                "image" : "http://localhost:8080/images/1_1.jpg",
+                "description" : "description"
+            }
+        ]
+    },
+    {
+        "nom" : "nom vendeur",
+        "logo" : "http://localhost:8080/images/oeil.png",
+        "raison_sociale" : "raison sociale",
+        "siret" : "numéro de siret",
+        "numero_TVA" : "numéro de TVA",
+        "adresse" : "adresse",
+        "contact" : "adresse mail",
+        "description" : "description",
+        "note" : "note",
+
+        "produits" : [
+
+            {
+                "nom_produit" : "nom produit",
+                "prixHT" : "prix HT",
+                "prixTTC" : "prix TTC",
+                "image" : "http://localhost:8080/images/1_1.jpg",
+                "description" : "description"
+            }
+        ]
+    }
+]

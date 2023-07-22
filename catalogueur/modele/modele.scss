@@ -1,0 +1,57 @@
+$font-family_1: "Courier New", "monospace";
+
+div {
+  page-break-after: always;
+}
+header {
+  margin: 5em;
+  text-align: center;
+  * {
+    vertical-align: middle;
+    display: inline;
+  }
+  h1 {
+    position: relative;
+  }
+  img {
+    position: absolute;
+    left: 1em;
+  }
+}
+section {
+  text-align: center;
+  font: 1em "roboto";
+  padding: 1em;
+  margin: 1em 10em;
+  article {
+    h2 {
+      font-family: $font-family_1;
+      font-size: 3em;
+    }
+    h3 {
+      font-family: $font-family_1;
+      font-size: 1.5em;
+    }
+    img {
+      height: 100px;
+      width: auto;
+      border: solid black 2px;
+    }
+  }
+  img {
+    margin: 0 auto;
+    height: 250px;
+    width: auto;
+    border: solid black 2px;
+    + {
+      article {
+        display: inline-block;
+        text-align: center;
+        vertical-align: top;
+        h3 {
+          margin: 2.5em;
+        }
+      }
+    }
+  }
+}
